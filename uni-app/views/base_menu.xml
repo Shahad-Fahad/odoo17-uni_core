@@ -1,0 +1,21 @@
+<odoo>
+ 
+  <menuitem
+ 	id = "real_estate_root_menu"
+ 	name = "Real Estate"
+ 	web_icon = "uni_core,staric\description\uni_icon.png"
+  />
+
+  <menuitem
+ 	id = "colleges_menu"
+ 	name = "Colleges"
+ 	parent = "real_estate_root_menu"
+  />
+   <menuitem
+ 	id = "students_menu"
+ 	name = "Students"
+ 	parent = "real_estate_root_menu"
+  />
+
+
+</odoo>	

@@ -1,0 +1,44 @@
+<odoo>
+
+  <record id = "college_view_tree" model = "ir.ui.view">
+  	<field name = "name">college tree</field>
+  	<field name = "model">college</field>
+  	<field name = "arch" type = "xml">
+  		<tree>
+  			<field name = "code"/>
+  			<field name = "name"/>
+  			<field name = "department_ids" widget = "many2many_tags"/>
+  		</tree>
+    </field>
+  </record>	
+
+  <record id = "college_view_form" model = "ir.ui.view">
+    <field name = "name">college form</field>
+    <field name = "model">college</field>
+    <field name = "arch" type = "xml">
+      <form>
+        <sheet>
+            <group>
+                <field name = "name"/>
+                <field name = "code"/>
+                <field name = "department_ids" widget = "many2many_tags"/>
+            </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id = "college_action" model = "ir.actions.act_window">
+    <field name = "name">College</field>
+    <field name = "res_model">college</field>
+  </record> 
+ 
+  <menuitem
+  id = "college_menu"
+  name = "Colleges"
+  parent = "colleges_menu"
+  action = "college_action"
+  sequence="1"
+  />  
+
+</odoo>

@@ -1,4 +1,8 @@
 from odoo import models, fields, api, _
+import logging
+
+_logger = logging.getLogger(__name__)
+
 
 class Student(models.Model):
     _name = 'university.student'
@@ -32,5 +36,4 @@ class Student(models.Model):
 
     def action_count_courses(self):
         for student in self:
-            print(f"Student {student.name} is enrolled in {len(student.course_ids)} courses.")
-            
+             _logger.info("Student %s is enrolled in %s courses.", student.name, len(student.course_ids))

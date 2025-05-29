@@ -1,0 +1,40 @@
+<odoo>
+
+  <record id = "student_academic_level_view_tree" model = "ir.ui.view">
+  	<field name = "name">student.academic.level tree</field>
+  	<field name = "model">student.academic.level</field>
+  	<field name = "arch" type = "xml">
+  		<tree class="header_style">
+  			<field name = "levels"/>
+  		</tree>
+    </field>
+  </record>	
+
+  <record id = "student_academic_level_view_form" model = "ir.ui.view">
+    <field name = "name">student.academic.level form</field>
+    <field name = "model">student.academic.level</field>
+    <field name = "arch" type = "xml">
+      <form>
+        <sheet>
+            <group>
+                <field name = "levels"/>
+            </group>
+        </sheet>
+      </form>
+    </field>
+  </record> 
+
+  <record id = "student_academic_level_action" model = "ir.actions.act_window">
+    <field name = "name">Academic Levels</field>
+    <field name = "res_model">student.academic.level</field>
+  </record> 
+ 
+  <menuitem
+  id = "student_academic_level_menu"
+  name = "Academic Levels"
+  parent = "university_colleges_menu"
+  action = "student_academic_level_action"
+  sequence="4"
+  /> 
+
+</odoo>

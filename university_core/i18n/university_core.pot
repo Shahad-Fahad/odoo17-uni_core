@@ -1,0 +1,224 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* university_core
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250514\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-28 07:16+0000\n"
+"PO-Revision-Date: 2025-05-28 07:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: university_core
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_form
+msgid "Academic Info"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__academiclevel_id
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_search
+msgid "Academic Level"
+msgstr ""
+
+#. module: university_core
+#: model:ir.actions.act_window,name:university_core.student_academic_level_action
+#: model:ir.model,name:university_core.model_student_academic_level
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__levels
+#: model:ir.ui.menu,name:university_core.student_academic_level_menu
+msgid "Academic Levels"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__code
+#: model:ir.model.fields,field_description:university_core.field_university_college__code
+#: model:ir.model.fields,field_description:university_core.field_university_course__code
+msgid "Code"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model,name:university_core.model_university_college
+#: model:ir.model.fields,field_description:university_core.field_college_department__college_id
+#: model:ir.model.fields,field_description:university_core.field_university_student__college_id
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_search
+msgid "College"
+msgstr ""
+
+#. module: university_core
+#: model:ir.actions.act_window,name:university_core.university_college_action
+#: model:ir.ui.menu,name:university_core.university_college_menu
+#: model:ir.ui.menu,name:university_core.university_colleges_menu
+msgid "Colleges"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model,name:university_core.model_university_course
+msgid "Course"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__course_count
+msgid "Course Count"
+msgstr ""
+
+#. module: university_core
+#: model:ir.actions.act_window,name:university_core.university_course_action
+#: model:ir.model.fields,field_description:university_core.field_university_student__course_ids
+#: model:ir.ui.menu,name:university_core.course_menu
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_form
+msgid "Courses"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__create_uid
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__create_uid
+#: model:ir.model.fields,field_description:university_core.field_university_college__create_uid
+#: model:ir.model.fields,field_description:university_core.field_university_course__create_uid
+#: model:ir.model.fields,field_description:university_core.field_university_student__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__create_date
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__create_date
+#: model:ir.model.fields,field_description:university_core.field_university_college__create_date
+#: model:ir.model.fields,field_description:university_core.field_university_course__create_date
+#: model:ir.model.fields,field_description:university_core.field_university_student__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model,name:university_core.model_college_department
+#: model:ir.model.fields,field_description:university_core.field_university_college__department_ids
+#: model:ir.model.fields,field_description:university_core.field_university_student__department_id
+msgid "Department"
+msgstr ""
+
+#. module: university_core
+#: model:ir.actions.act_window,name:university_core.college_department_action
+#: model:ir.ui.menu,name:university_core.college_department_menu
+msgid "Departments"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__display_name
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__display_name
+#: model:ir.model.fields,field_description:university_core.field_university_college__display_name
+#: model:ir.model.fields,field_description:university_core.field_university_course__display_name
+#: model:ir.model.fields,field_description:university_core.field_university_student__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__email
+msgid "Email"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__enrollment_date
+msgid "Enrollment Date"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields.selection,name:university_core.selection__university_student__gender__female
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_search
+msgid "Female"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__gender
+msgid "Gender"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__id
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__id
+#: model:ir.model.fields,field_description:university_core.field_university_college__id
+#: model:ir.model.fields,field_description:university_core.field_university_course__id
+#: model:ir.model.fields,field_description:university_core.field_university_student__id
+msgid "ID"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__write_uid
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__write_uid
+#: model:ir.model.fields,field_description:university_core.field_university_college__write_uid
+#: model:ir.model.fields,field_description:university_core.field_university_course__write_uid
+#: model:ir.model.fields,field_description:university_core.field_university_student__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__write_date
+#: model:ir.model.fields,field_description:university_core.field_student_academic_level__write_date
+#: model:ir.model.fields,field_description:university_core.field_university_college__write_date
+#: model:ir.model.fields,field_description:university_core.field_university_course__write_date
+#: model:ir.model.fields,field_description:university_core.field_university_student__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields.selection,name:university_core.selection__university_student__gender__male
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_search
+msgid "Male"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_college_department__name
+#: model:ir.model.fields,field_description:university_core.field_university_college__name
+#: model:ir.model.fields,field_description:university_core.field_university_course__name
+#: model:ir.model.fields,field_description:university_core.field_university_student__name
+msgid "Name"
+msgstr ""
+
+#. module: university_core
+#: model_terms:ir.ui.view,arch_db:university_core.university_student_view_form
+msgid "Personal Info"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__phone
+msgid "Phone"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model,name:university_core.model_university_student
+msgid "Student"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.fields,field_description:university_core.field_university_student__student_id
+msgid "Student ID"
+msgstr ""
+
+#. module: university_core
+#: model:ir.actions.act_window,name:university_core.university_student_action
+#: model:ir.ui.menu,name:university_core.students_menu
+#: model:ir.ui.menu,name:university_core.uni_student_menu
+msgid "Students"
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.constraint,message:university_core.constraint_university_student_unique_email
+msgid "This Email is already exists."
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.constraint,message:university_core.constraint_university_student_unique_phone
+msgid "This Phone Number is already exists."
+msgstr ""
+
+#. module: university_core
+#: model:ir.model.constraint,message:university_core.constraint_university_student_unique_student_id
+msgid "This Student ID is already exists."
+msgstr ""
+
+#. module: university_core
+#: model:ir.ui.menu,name:university_core.University_Core_root_menu
+msgid "University Core"
+msgstr "

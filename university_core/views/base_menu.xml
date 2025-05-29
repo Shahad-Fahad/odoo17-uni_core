@@ -1,0 +1,20 @@
+<odoo>
+ 
+  <menuitem
+ 	id = "University_Core_root_menu"
+ 	name = "University Core"
+ 	web_icon = "university_core,static\description\icon.png" 
+ 	/>
+
+  <menuitem
+ 	id = "university_colleges_menu"
+ 	name = "Colleges"
+ 	parent = "University_Core_root_menu"
+  />
+   <menuitem
+ 	id = "students_menu"
+ 	name = "Students"
+ 	parent = "University_Core_root_menu"
+  />
+
+</odoo>	

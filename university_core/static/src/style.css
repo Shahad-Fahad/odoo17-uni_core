@@ -1,0 +1,22 @@
+.header_style table thead > tr > th,
+.header_style_student table thead > tr > th{
+background-color: #8d82b1 !important ;
+color: white !important;
+text-align: center !important;
+}
+
+.header_style , .header_style_student{
+text-align: center !important;	
+}
+.o_tag.o_tag_color_0, .o_tag.o_tag_color_0::after {
+    background-color: rgba(141, 130, 177, 1) !important; 
+    color: white !important;
+}
+.header_style thead th:nth-child(1),
+.header_style tbody td:nth-child(1) {
+    width: 30px !important; /* Example width */
+}
+.header_style thead th:nth-child(2),
+.header_style tbody td:nth-child(2) {
+    width: 90px !important; /* Example width */
+}

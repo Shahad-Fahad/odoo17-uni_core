@@ -1,0 +1,85 @@
+<odoo>
+
+  <record id = "university_student_view_tree" model = "ir.ui.view">
+  	<field name = "name">university.student tree</field>
+  	<field name = "model">university.student</field>
+  	<field name = "arch" type = "xml">
+  		<tree class="header_style_student">
+  			<field name = "name"/>
+  			<field name = "student_id"/>
+  			<field name = "college_id"/>
+  			<field name = "phone"/>
+  			<field name = "email"/>
+  			<field name = "academiclevel_id"/>
+  			<field name = "gender"/>
+  		</tree>
+    </field>
+  </record>	
+
+  <record id = "university_student_view_form" model = "ir.ui.view">
+    <field name = "name">university.student form</field>
+    <field name = "model">university.student</field>
+    <field name = "arch" type = "xml">
+      <form>
+        <sheet>
+         <div name="button_box" class="oe_button_box">
+          <button class="oe_stat_button" type="object" name="action_count_courses" icon="fa-book">
+            <field name="course_count" string="Courses" widget="statinfo"/> 
+            </button>
+          </div>
+          <group>
+            <group string ="Personal Info">
+        <field name = "name"/>
+        <field name = "phone" widget="phone"/>
+        <field name = "email" widget="email"/>
+        <field name = "gender"/>
+            </group>
+            <group string ="Academic Info">
+        <field name = "student_id"/>
+        <field name = "college_id"/>
+        <field name = "department_id" domain="[('college_id', '=', college_id)]"/>
+        <field name = "academiclevel_id"/> 
+        <field name = "course_ids" widget = "many2many_tags"/> 
+        <field name = "enrollment_date"/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Courses">
+              <field name = "course_ids"/> 
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id = "university_student_view_search" model = "ir.ui.view">
+    <field name = "name">university.student search</field>
+    <field name = "model">university.student</field>
+    <field name = "arch" type = "xml">
+      <search>
+            <field name = "name"/>
+  			<field name = "student_id"/>
+  			<field name = "college_id"/>
+
+        <filter name ="gender" string = "Female" domain="[('gender','=','female')]"/>
+        <filter name ="gender" string = "Male" domain="[('gender','=','male')]"/>
+        <filter name ="group_college" string = "College" context="{'group_by':'college_id'}"/>
+        <filter name ="group_academiclevel" string = "Academic Level" context="{'group_by':'academiclevel_id'}"/>
+      </search>
+    </field>
+  </record>  
+
+  <record id = "university_student_action" model = "ir.actions.act_window">
+    <field name = "name">Students</field>
+    <field name = "res_model">university.student</field>
+  </record> 
+ 
+  <menuitem
+  id = "uni_student_menu"
+  name = "Students"
+  parent = "students_menu"
+  action = "university_student_action"
+  />  
+
+</odoo>
